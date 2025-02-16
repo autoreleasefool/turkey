@@ -1,6 +1,6 @@
 package ca.josephroque.turkey.model
 
-import util.Frame
+import ca.josephroque.turkey.util.Frame
 
 /**
  * Represents a frame in a game of bowling.

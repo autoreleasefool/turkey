@@ -1,6 +1,5 @@
 package ca.josephroque.turkey.util
 
-import util.Roll
 import kotlin.test.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue

@@ -1,6 +1,5 @@
 package ca.josephroque.turkey.util
 
-import util.Game
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue

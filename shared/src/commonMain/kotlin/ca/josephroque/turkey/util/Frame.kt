@@ -1,4 +1,4 @@
-package util
+package ca.josephroque.turkey.util
 
 object Frame {
 	/** Number of rolls in a single frame. */

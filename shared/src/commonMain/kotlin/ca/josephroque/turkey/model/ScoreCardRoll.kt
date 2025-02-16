@@ -1,6 +1,6 @@
 package ca.josephroque.turkey.model
 
-import util.Roll
+import ca.josephroque.turkey.util.Roll
 
 /**
  * Represents a roll in a frame.

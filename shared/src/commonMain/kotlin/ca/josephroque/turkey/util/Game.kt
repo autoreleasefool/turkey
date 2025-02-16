@@ -1,4 +1,4 @@
-package util
+package ca.josephroque.turkey.util
 
 object Game {
 	/** Number of frames in a game of bowling. */
