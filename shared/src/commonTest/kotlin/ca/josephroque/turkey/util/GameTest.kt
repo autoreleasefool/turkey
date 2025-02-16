@@ -13,7 +13,7 @@ class GameTest {
 
 	@Test
 	fun `test FrameIndices include all values from 0 to 9`() {
-		assertEquals(Game.FrameIndices.toSet(), setOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9))
+		assertEquals(setOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9), Game.FrameIndices.toSet())
 	}
 
 	@Test

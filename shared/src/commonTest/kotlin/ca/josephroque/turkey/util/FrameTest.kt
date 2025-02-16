@@ -14,7 +14,7 @@ class FrameTest {
 
 	@Test
 	fun `test RollIndices include all values from 0 to 2`() {
-		assertEquals(Frame.RollIndices.toSet(), setOf(0, 1, 2))
+		assertEquals(setOf(0, 1, 2), Frame.RollIndices.toSet())
 	}
 
 	@Test

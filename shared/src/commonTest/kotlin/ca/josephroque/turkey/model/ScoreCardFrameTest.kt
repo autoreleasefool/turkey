@@ -19,14 +19,14 @@ class ScoreCardFrameTest {
 	fun `test display is score when score is not null`() {
 		val frame = ScoreCardFrame(0, emptyList(), 0)
 
-		assertEquals(frame.display, "0")
+		assertEquals("0", frame.display)
 	}
 
 	@Test
 	fun `test display is score when score is not null and has rolls`() {
 		val frame = ScoreCardFrame(0, listOf(ScoreCardRoll(0, "2", didFoul = false, isMarkValue = false)), 0)
 
-		assertEquals(frame.display, "0")
+		assertEquals("0", frame.display)
 	}
 
 	@Test
@@ -75,7 +75,7 @@ class ScoreCardFrameTest {
 	fun `test gameScore is score when frame has score`() {
 		val gameScore = listOf(ScoreCardFrame(0, emptyList(), 123)).gameScore()
 
-		assertEquals(gameScore, 123)
+		assertEquals(123, gameScore)
 	}
 
 	@Test
@@ -87,6 +87,6 @@ class ScoreCardFrameTest {
 			ScoreCardFrame(3, emptyList(), null),
 		).gameScore()
 
-		assertEquals(gameScore, 30)
+		assertEquals(30, gameScore)
 	}
 }
