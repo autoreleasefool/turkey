@@ -28,4 +28,17 @@ class FrameTest {
 			assertFalse(Frame.isLastFrame(i))
 		}
 	}
+
+	@Test
+	fun `test rollIndicesAfter returns correct range`() {
+		assertEquals(1..2, Frame.rollIndicesAfter(0))
+		assertEquals(2..2, Frame.rollIndicesAfter(1))
+		assertEquals(IntRange.EMPTY, Frame.rollIndicesAfter(2))
+	}
+
+	@Test
+	fun `test rollIndicesAfter returns empty range for invalid input`() {
+		assertEquals(IntRange.EMPTY, Frame.rollIndicesAfter(-1))
+		assertEquals(IntRange.EMPTY, Frame.rollIndicesAfter(3))
+	}
 }
